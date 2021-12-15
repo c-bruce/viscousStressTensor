@@ -1,0 +1,18 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Version:  v2106
+    \\  /    A nd           | Website:  www.openfoam.com
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+
+type		viscousStressTensor;
+libs		("fieldFunctionObjects" "libmyViscousStressTensorFunctionObject.so");
+
+field		U;
+rho		1;
+
+executeControl	writeTime;
+writeControl	writeTime;
+
+// ************************************************************************* //
